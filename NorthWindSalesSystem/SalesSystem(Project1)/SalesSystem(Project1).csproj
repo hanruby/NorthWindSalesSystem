@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F841AAFE-77D3-4AEC-81A9-2EFFAD2683A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SalesSystem_Project1_</RootNamespace>
+    <AssemblyName>SalesSystem%28Project1%29</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business.cs" />
+    <Compile Include="DataAccessLayer.cs" />
+    <Compile Include="DataAccessEventArgs.cs" />
+    <Compile Include="DataAccessEventHandler.cs" />
+    <Compile Include="FrmCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCatalogue.Designer.cs">
+      <DependentUpon>FrmCatalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmation.Designer.cs">
+      <DependentUpon>FrmConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParent.Designer.cs">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSales.Designer.cs">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCategory.Designer.cs">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCustomer.Designer.cs">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddEmployee.Designer.cs">
+      <DependentUpon>FrmAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddProduct.Designer.cs">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddShipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddShipper.Designer.cs">
+      <DependentUpon>FrmAddShipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddSupplier.Designer.cs">
+      <DependentUpon>FrmAddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageCategories.designer.cs">
+      <DependentUpon>FrmManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageCustomers.designer.cs">
+      <DependentUpon>FrmManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageEmployees.designer.cs">
+      <DependentUpon>FrmManageEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageProducts.designer.cs">
+      <DependentUpon>FrmManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageShippers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageShippers.designer.cs">
+      <DependentUpon>FrmManageShippers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagementForms\FrmManageSuppliers.designer.cs">
+      <DependentUpon>FrmManageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCatalogue.resx">
+      <DependentUpon>FrmCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfirmation.resx">
+      <DependentUpon>FrmConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParent.resx">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSales.resx">
+      <DependentUpon>FrmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCategory.resx">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddCustomer.resx">
+      <DependentUpon>FrmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddEmployee.resx">
+      <DependentUpon>FrmAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddProduct.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddShipper.resx">
+      <DependentUpon>FrmAddShipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\DatabaseInsertForms\FrmAddSupplier.resx">
+      <DependentUpon>FrmAddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageCategories.resx">
+      <DependentUpon>FrmManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageCustomers.resx">
+      <DependentUpon>FrmManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageEmployees.resx">
+      <DependentUpon>FrmManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageProducts.resx">
+      <DependentUpon>FrmManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageShippers.resx">
+      <DependentUpon>FrmManageShippers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManagementForms\FrmManageSuppliers.resx">
+      <DependentUpon>FrmManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Northwind.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
